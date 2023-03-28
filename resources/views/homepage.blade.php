@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
+@section('page_name')
+    Homepage
+@endsection
+
 @section('paragrafo_principale')
-<p>testo</p>
-    
+    Testo della Homepage
 @endsection
