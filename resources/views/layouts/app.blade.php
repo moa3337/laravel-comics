@@ -15,6 +15,7 @@
 
     <main>
         @yield('main_content')
+        @dump($comics)
     </main>
 
     @include('partials._footer')

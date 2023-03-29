@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .jumbotron {
     min-height: 100vh;
 }
