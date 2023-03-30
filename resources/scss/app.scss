@@ -1,20 +1,30 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.jumbotron {
-    min-height: 100vh;
-}
-
-img {
-    max-height: 150px;
 }
 
 .jumbo {
     height: 40vh;
     background-image: url(../img/jumbotron.jpg);
+}
+
+.jumbo-2 {
+    height: 20vh;
+}
+
+footer {
+    height: 20vh;
+    background-image: url(../img/footer-bg.jpg);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 12px;
+    color: grey;
 }

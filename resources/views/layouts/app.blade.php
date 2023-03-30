@@ -10,12 +10,12 @@
     @vite('resources/js/app.js')
 </head>
 
-<body>
+<body class="bg-secondary">
     @include('partials/_navbar')
 
     <main>
         @yield('main_content')
-        @dump($comics)
+        {{--@dump($comics)--}}
     </main>
 
     @include('partials._footer')
