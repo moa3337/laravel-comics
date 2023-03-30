@@ -21,3 +21,9 @@ Route::get('/comic-list', function () {
     $comics = config('db.comics');
     return view('comic-list', compact('comics'));
 })->name('comic-list');
+
+Route::get('/comic-list/{index}', function ($comic_key) {
+    $comics = config('db.comics');
+    $comic = $comics[$comic_key];
+    return view('comic-detail', compact('comic', 'comic_key'));
+})->name('comic-detail');

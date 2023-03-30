@@ -5,15 +5,16 @@
 @section('main_content')
     <div class="container">
         <div class="row my-3 g-3">
-            @forelse ($comics as $comic)
+            @forelse ($comics as $comic_key => $comic)
             <div class="col-6 col-lg-4 col-xxl-3 mb-3">
                 <div class="card h-100" style="width: 18rem;">
                     <img class="w-100" src="{{ Vite::asset($comic['thumb']) }}" alt="">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h4>{{ $comic['title'] }}</h4>   
                         <p>price: {{ $comic['price'] }}</p>
                         <p>series: {{ $comic['series'] }}</p> 
-                        <p>date: {{ $comic['sale_date'] }}</p> 
+                        <p>date: {{ $comic['sale_date'] }}</p>
+                        <a href="{{ route('comic-detail', ['index' => $comic_key]) }}" class="mt-auto">Dettaglio</a> 
                     </div>
                 </div>
             </div>

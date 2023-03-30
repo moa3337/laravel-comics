@@ -1,5 +1,5 @@
 <footer class="bg-dark mt-auto text-light h-100">
-    <div class="container d-flex">
+    <div class="container d-flex mb-4">
         <ul class="mt-4 me-3">
             <h6 class="fw-bold">DC COMICS</h6>
             <li>characters</li>
